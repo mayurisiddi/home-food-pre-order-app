@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Order fresh homemade meals ahead from local home cooks.">
+  <title>HomeBite — Homemade food, ready when you are</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="HomeBite home"><span class="brand-mark">hb</span><span>home<span class="brand-accent">bite</span></span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#meals">Explore meals</a><a href="#how-it-works">How it works</a><a href="#orders">My orders</a>
+      </div>
+      <a class="nav-cta" href="#meals">Find your meal <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> HOMEMADE. HEARTFELT. ON TIME.</div>
+          <h1>Your next comfort meal is <span>already cooking.</span></h1>
+          <p class="hero-description">Discover delicious home-cooked food near you. Pre-order ahead, skip the wait, and eat like home.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#meals">Explore today's menu <span>→</span></a><a class="text-link" href="#how-it-works">How it works <span>↗</span></a></div>
+          <div class="hero-proof"><div class="avatar-stack"><span>👩🏽</span><span>👨🏻</span><span>👩🏾</span></div><div><strong>Made by home cooks</strong><small>Fresh meals, made with care</small></div><div class="proof-divider"></div><div><strong>Pre-order friendly</strong><small>Plan your meal ahead</small></div></div>
+        </div>
+        <div class="hero-visual" aria-label="Illustration of a homemade meal">
+          <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+          <div class="food-card"><div class="food-emoji">🍛</div><div class="food-card-label"><span class="live-dot"></span> TODAY'S COMFORT PICK</div><h3>Homestyle Thali</h3><p>Warm, hearty & made fresh</p><div class="food-card-bottom"><strong>From ₹99</strong><span>♡ Made with love</span></div></div>
+          <div class="floating-note note-top"><span class="note-icon">✦</span><span><strong>Freshly prepared</strong><small>Just like home</small></span></div>
+          <div class="floating-note note-bottom"><span class="note-icon note-green">✓</span><span><strong>Order ahead</strong><small>Pick your time</small></span></div>
+          <span class="decor decor-one">✳</span><span class="decor decor-two">✦</span>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>GOOD FOOD, GOOD MOOD.</span><div class="hero-line"></div><span>MADE IN HOME KITCHENS</span><div class="hero-line"></div><span>READY ON YOUR SCHEDULE</span></div>
+    </section>
+
+    <section class="section meals-section" id="meals">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="eyebrow-dot"></span> THE DAILY MENU</div><h2>Find your <span>kind of comfort.</span></h2><p>Browse home-cooked favourites and plan your next meal.</p></div>
+          <div class="menu-count" id="menuCount">Loading menu…</div>
+        </div>
+        <div class="filter-bar">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="searchInput" placeholder="Search meals or cooks…" aria-label="Search meals"></label>
+          <div class="filter-controls"><label class="sr-only" for="categoryFilter">Filter by category</label><select id="categoryFilter"><option value="all">All meals</option><option value="thali">Thali</option><option value="rice">Rice bowls</option><option value="snacks">Snacks</option><option value="breakfast">Breakfast</option><option value="curry">Curries</option></select><label class="sr-only" for="sortFilter">Sort meals</label><select id="sortFilter"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select></div>
+        </div>
+        <div class="notice" id="menuNotice" role="status" hidden></div>
+        <div class="meal-grid" id="mealGrid" aria-live="polite"><div class="loading-state"><span class="spinner"></span> Bringing the menu to your table…</div></div>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading centered"><div><div class="eyebrow"><span class="eyebrow-dot"></span> EASY AS ONE, TWO, THREE</div><h2>Good food. <span>No guesswork.</span></h2><p>Three simple steps between you and a homemade favourite.</p></div></div>
+        <div class="steps-grid">
+          <article class="step-card"><div class="step-number">01</div><div class="step-icon">⌕</div><h3>Discover</h3><p>Explore the menu, search your cravings, and find a meal that feels right.</p></article>
+          <article class="step-card step-featured"><div class="step-number">02</div><div class="step-icon">♡</div><h3>Pre-order</h3><p>Choose your meal, add your details, and tell the cook when you need it.</p></article>
+          <article class="step-card"><div class="step-number">03</div><div class="step-icon">♨</div><h3>Enjoy</h3><p>Your home-style meal is planned ahead, so you can spend less time waiting.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="orders-section" id="orders">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> YOUR FOOD PLANS</div><h2>Orders, <span>all in one place.</span></h2><p>Review your pre-orders and cancel if your plans change.</p></div><button class="button button-outline" id="refreshOrders">↻ Refresh orders</button></div>
+        <div id="ordersNotice" class="notice" role="status" hidden></div>
+        <div class="orders-list" id="ordersList"><div class="loading-state"><span class="spinner"></span> Loading your orders…</div></div>
+      </div>
+    </section>
+
+    <section class="bottom-cta"><div class="container bottom-cta-inner"><div><span class="cta-kicker">A LITTLE MORE HOME IN EVERY BITE</span><h2>Make room for a meal<br>made with <em>love.</em></h2></div><a class="button button-light" href="#meals">Explore the menu <span>→</span></a><span class="cta-doodle">✳</span></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark">hb</span><span>home<span class="brand-accent">bite</span></span></a><p>Good food brings us home.</p><span>© <span id="year"></span> HomeBite · Student project</span></div></footer>
+
+  <dialog class="order-dialog" id="orderDialog" aria-labelledby="dialogTitle">
+    <form id="orderForm" class="order-form">
+      <button type="button" class="dialog-close" id="closeDialog" aria-label="Close order form">×</button>
+      <div class="eyebrow"><span class="eyebrow-dot"></span> MAKE IT YOURS</div>
+      <h2 id="dialogTitle">Pre-order your meal</h2><p class="dialog-subtitle" id="dialogMealName">Choose a time and tell us where to reach you.</p>
+      <input type="hidden" id="mealId" name="mealId">
+      <label for="customerName">Your name</label><input id="customerName" name="customerName" maxlength="80" required placeholder="e.g. Ananya Rao">
+      <label for="customerPhone">Phone number</label><input id="customerPhone" name="customerPhone" type="tel" inputmode="tel" required pattern="[0-9+\-\s()]{7,20}" placeholder="e.g. 98765 43210">
+      <label for="pickupTime">Preferred pickup date & time</label><input id="pickupTime" name="pickupTime" type="datetime-local" required>
+      <label for="orderNotes">Notes <span class="optional">(optional)</span></label><textarea id="orderNotes" name="orderNotes" rows="2" maxlength="300" placeholder="Less spicy, no onions…"></textarea>
+      <div class="dialog-total"><span>Estimated total</span><strong id="dialogPrice">₹0</strong></div>
+      <button class="button button-primary button-full" type="submit" id="submitOrder">Place pre-order <span>→</span></button>
+      <p class="form-footnote">This demo does not take payments. Confirm pickup details with the cook.</p>
+      <div class="form-message" id="formMessage" role="status" hidden></div>
+    </form>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
